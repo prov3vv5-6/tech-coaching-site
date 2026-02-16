@@ -31,6 +31,10 @@ h1 {
 
 h2 {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 p {
@@ -47,8 +51,9 @@ p {
   margin-bottom: 20px;
 }
 .profile img {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  /* max-width: 400px; */
+  height: 250px;
   border-radius: 5%;
   object-fit: cover;
   border: 2px solid #e0e0e0;
@@ -65,10 +70,10 @@ a.button {
   display: block;
   text-align: center;
   padding: 14px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   transition: 0.2s ease;
 }
 
@@ -82,20 +87,37 @@ a.primary:hover {
 }
 
 a.secondary {
-  background: #1a73e8;
+  background: #039be5;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
-a.secondary:hover {
+/* a.secondary:hover {
   background: #1a73e8d2;
-}
+} */
 
 ul {
   padding-left: 18px;
 }
 
-.footer {
+/* .footer {
   margin-top: 25px;
   font-size: 14px;
   color: #666;
+} */
+.footer a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+}
+
+.footer i {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
 }
