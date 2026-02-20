@@ -8,6 +8,7 @@ body {
 
 .container {
   max-width: 700px;
+  height: auto;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -31,8 +32,7 @@ h1 {
 
 h2 {
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  font-size: 25px;
   align-items: center;
   text-align: center;
 }
@@ -92,19 +92,10 @@ a.secondary {
   font-family: "Roboto", sans-serif;
 }
 
-/* a.secondary:hover {
-  background: #1a73e8d2;
-} */
-
 ul {
   padding-left: 18px;
 }
 
-/* .footer {
-  margin-top: 25px;
-  font-size: 14px;
-  color: #666;
-} */
 .footer a {
   text-decoration: none;
   color: #1a73e8;
