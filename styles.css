@@ -139,5 +139,6 @@ ol {
 }
 
 .contact-item a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #039be5;
 }
