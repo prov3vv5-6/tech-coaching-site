@@ -39,7 +39,7 @@ h2 {
 
 p {
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .profile {
@@ -92,8 +92,10 @@ a.secondary {
   font-family: "Roboto", sans-serif;
 }
 
-ul {
+ol {
   padding-left: 18px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 .footer a {
@@ -111,4 +113,31 @@ ul {
   text-align: center;
   font-size: 14px;
   margin-top: 40px;
+}
+.contact-section {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.contact-item i {
+  font-size: 18px;
+  color: #039be5; /* Your blue */
+}
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
 }
