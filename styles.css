@@ -104,12 +104,13 @@ ol li {
 a.button {
   display: block;
   text-align: center;
-  padding: 17px;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 11px 24px;
+  border-radius: 4px;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 17px;
-  letter-spacing: 0.3px;
+  font-size: 14px;
+  font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.25px;
   transition: background 0.2s ease;
 }
 
@@ -132,14 +133,26 @@ a.secondary:hover {
 }
 
 .contact-section {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
   margin-top: 36px;
   padding-top: 24px;
   border-top: 1px solid #e8e8e8;
 }
 
-.contact-section > p {
-  font-size: 17px;
+.contact-col {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact-col:first-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.contact-col p {
+  font-size: 16px;
   color: #555;
   margin-bottom: 10px;
 }
@@ -155,6 +168,27 @@ a.secondary:hover {
 .contact-item i {
   font-size: 20px;
   color: #039be5;
+}
+
+.contact-item .bxl-youtube {
+  color: #ff0000;
+}
+
+@media (max-width: 520px) {
+  .card {
+    padding: 28px 18px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 24px;
+  }
 }
 
 .contact-item a {
