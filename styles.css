@@ -1,80 +1,116 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f7;
-  color: #111;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
 }
 
 .container {
   max-width: 700px;
-  height: auto;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
 .card {
   background: white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 40px 36px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
 }
 
 h1 {
   margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 32px;
+  margin-bottom: 16px;
+  font-size: 34px;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #1a1a1a;
 }
 
 h2 {
-  margin-top: 30px;
-  font-size: 25px;
-  align-items: center;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 600;
   text-align: center;
+  color: #1a1a1a;
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.85;
   font-size: 18px;
+  color: #333;
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
+
 .profile img {
   width: 100%;
-  /* max-width: 400px; */
-  height: 250px;
-  border-radius: 5%;
+  height: 260px;
+  border-radius: 10px;
   object-fit: cover;
   border: 2px solid #e0e0e0;
 }
 
+.HowWorks {
+  background: #f4f9fd;
+  border-left: 4px solid #039be5;
+  border-radius: 8px;
+  padding: 20px 26px;
+  margin: 28px 0;
+}
+
+ol {
+  padding-left: 22px;
+  line-height: 1.85;
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+ol li {
+  margin-bottom: 8px;
+}
+
+.notice {
+  background: #fff8e1;
+  border: 1px solid #f0c14b;
+  border-radius: 8px;
+  padding: 13px 18px;
+  font-size: 17px;
+  color: #5a4500;
+  text-align: center;
+  margin: 24px 0 0 0;
+  line-height: 1.6;
+}
+
 .buttons {
-  margin-top: 25px;
+  margin-top: 28px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 a.button {
   display: block;
   text-align: center;
-  padding: 14px;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 17px;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 13px;
-  transition: 0.2s ease;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease;
 }
 
 a.primary {
@@ -83,50 +119,29 @@ a.primary {
 }
 
 a.primary:hover {
-  background: #1a73e8d2;
+  background: #1558c0;
 }
 
 a.secondary {
   background: #039be5;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
-}
-/* .HowWorks {
-  background-color: #039be5;
-  width: 100%;
-} */
-
-ol {
-  padding-left: 18px;
-  line-height: 1.6;
-  font-size: 18px;
-}
-ul {
-  padding-left: 18px;
-  line-height: 1.6;
-  font-size: 18px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: 500;
+a.secondary:hover {
+  background: #0280be;
 }
 
-.footer i {
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 40px;
-}
 .contact-section {
   text-align: center;
-  margin-top: 40px;
-  font-size: 16px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.contact-section > p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 .contact-item {
@@ -134,20 +149,21 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .contact-item i {
-  font-size: 18px;
-  color: #039be5; /* Your blue */
+  font-size: 20px;
+  color: #039be5;
 }
+
 .contact-item a {
   text-decoration: none;
-  color: inherit;
+  color: #1a1a1a;
   font-weight: 500;
+  font-size: 17px;
 }
 
 .contact-item a:hover {
-  /* text-decoration: underline; */
   color: #039be5;
 }
