@@ -15,16 +15,10 @@ body {
 .topnav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 12px 20px;
   margin-bottom: 20px;
-}
-
-.brand {
-  font-weight: 600;
-  font-size: 18px;
-  color: #1a1a1a;
 }
 
 .navlinks {
@@ -233,8 +227,7 @@ a.secondary:hover {
   }
 
   .topnav {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
   }
 
