@@ -1,30 +1,49 @@
+/* ===========================================================
+   Justin Moritz — Tech Coaching for Seniors
+   Clean, warm, high-contrast, senior-friendly styling.
+   Single-column, large legible text, big tap targets.
+   =========================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background: #f0f4f8;
-  color: #1a1a1a;
+  background: #fbf7f0; /* warm off-white */
+  color: #1c1c1c; /* near-black for high contrast */
   margin: 0;
   padding: 0;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 32px 20px 60px;
+  /* Fill the full viewport height on large screens, stay flexible on mobile */
+  min-height: 100vh;
 }
 
+/* ---------- Navigation ---------- */
 .topnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .navlinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 22px;
+  justify-content: center;
+  gap: 10px 28px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -32,228 +51,321 @@ body {
 
 .navlinks a {
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: #1a1a1a;
+  font-size: 19px;
+  font-weight: 600;
+  color: #1c1c1c;
+  padding: 6px 4px;
   transition: color 0.2s ease;
 }
 
-.navlinks a:hover {
-  color: #039be5;
+.navlinks a:hover,
+.navlinks a:focus {
+  color: #b85c00; /* warm accent */
 }
 
+/* ---------- Card ---------- */
 .card {
-  background: white;
-  border-radius: 16px;
-  padding: 40px 36px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 44px 40px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
 }
 
+/* ---------- Headings & text ---------- */
 h1 {
   margin-top: 0;
-  margin-bottom: 16px;
-  font-size: 34px;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 700;
   text-align: center;
-  color: #1a1a1a;
+  color: #1c1c1c;
 }
 
 h2 {
   margin-top: 0;
-  margin-bottom: 14px;
-  font-size: 24px;
-  font-weight: 600;
+  margin-bottom: 18px;
+  font-size: 28px;
+  font-weight: 700;
   text-align: center;
-  color: #1a1a1a;
+  color: #1c1c1c;
 }
 
 p {
-  line-height: 1.85;
-  font-size: 18px;
-  color: #333;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #2b2b2b;
 }
 
+/* ---------- Profile photo ---------- */
 .profile {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  justify-content: center;
+  margin: 8px 0 28px;
 }
 
 .profile img {
   width: 100%;
-  height: 260px;
-  border-radius: 10px;
+  max-width: 420px;
+  height: 320px;
+  border-radius: 14px;
   object-fit: cover;
-  border: 2px solid #e0e0e0;
+  border: 3px solid #f0e6d6;
 }
 
+/* ===========================================================
+   PRIMARY ACTION — Contact (call or text)
+   The single most prominent thing on the page.
+   =========================================================== */
+.contact-cta {
+  margin: 36px 0;
+  padding: 32px 28px;
+  background: #fff4e6; /* warm highlight */
+  border: 3px solid #e9a23b;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: 30px;
+  margin-bottom: 22px;
+  color: #1c1c1c;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto 16px;
+  padding: 22px 24px;
+  border-radius: 12px;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.2;
+  word-break: break-word;
+  transition: background 0.2s ease, transform 0.05s ease;
+}
+
+.cta-button i {
+  font-size: 30px;
+}
+
+.cta-button:active {
+  transform: translateY(1px);
+}
+
+.cta-phone {
+  background: #b85c00; /* strong warm orange-brown */
+  color: #ffffff;
+}
+
+.cta-phone:hover,
+.cta-phone:focus {
+  background: #9c4e00;
+}
+
+.cta-email {
+  background: #ffffff;
+  color: #1c1c1c;
+  border: 3px solid #b85c00;
+  font-size: 23px;
+}
+
+.cta-email:hover,
+.cta-email:focus {
+  background: #fff0dc;
+}
+
+.cta-note {
+  margin: 14px 0 0;
+  font-size: 19px;
+  color: #4a4a4a;
+}
+
+/* ---------- How It Works ---------- */
 .HowWorks {
   background: #f4f9fd;
-  border-left: 4px solid #039be5;
-  border-radius: 8px;
-  padding: 20px 26px;
-  margin: 28px 0;
-}
-
-.learning {
-  background: #f4f9fd;
-  border-left: 4px solid #039be5;
-  border-radius: 8px;
-  padding: 20px 26px;
-  margin: 28px 0;
-}
-
-.learning p {
-  margin-bottom: 0;
-}
-
-.learning .button {
-  max-width: 260px;
-  margin: 18px auto 0;
+  border-left: 6px solid #2f7fb0;
+  border-radius: 10px;
+  padding: 26px 30px;
+  margin: 36px 0;
 }
 
 ol {
-  padding-left: 22px;
-  line-height: 1.85;
-  font-size: 18px;
-  color: #333;
+  padding-left: 26px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #2b2b2b;
   margin: 0;
 }
 
 ol li {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .notice {
   background: #fff8e1;
-  border: 1px solid #f0c14b;
-  border-radius: 8px;
-  padding: 13px 18px;
-  font-size: 17px;
-  color: #5a4500;
+  border: 2px solid #f0c14b;
+  border-radius: 10px;
+  padding: 18px 22px;
+  font-size: 19px;
+  color: #4a3a00;
   text-align: center;
-  margin: 24px 0 0 0;
+  margin: 24px 0 0;
   line-height: 1.6;
 }
 
-.buttons {
-  margin-top: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+/* ---------- Learning Resources ---------- */
+.learning {
+  background: #f4f9fd;
+  border-left: 6px solid #2f7fb0;
+  border-radius: 10px;
+  padding: 26px 30px;
+  margin: 36px 0;
+  text-align: center;
 }
 
-a.button {
-  display: block;
-  text-align: center;
-  padding: 11px 24px;
-  border-radius: 4px;
-  font-weight: 500;
+.learning p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.learning-button {
+  display: inline-block;
+  background: #2f7fb0;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
-  font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
-  letter-spacing: 0.25px;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 18px 32px;
+  border-radius: 12px;
   transition: background 0.2s ease;
 }
 
-a.primary {
-  background: #1a73e8;
-  color: white;
+.learning-button:hover,
+.learning-button:focus {
+  background: #246388;
 }
 
-a.primary:hover {
-  background: #1558c0;
-}
-
-a.secondary {
-  background: #039be5;
-  color: #ffffff;
-}
-
-a.secondary:hover {
-  background: #0280be;
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: row;
-  gap: 0;
-  margin-top: 36px;
-  padding-top: 24px;
-  border-top: 1px solid #e8e8e8;
-}
-
-.contact-col {
-  flex: 1;
+/* ===========================================================
+   SECONDARY ACTION — Payment (smaller, lower on the page)
+   =========================================================== */
+.pay-section {
   text-align: center;
-  padding: 0 20px;
+  margin: 36px 0;
+  padding-top: 30px;
+  border-top: 2px solid #eee2cf;
 }
 
-.contact-col:first-child {
-  border-right: 1px solid #e8e8e8;
+.pay-label {
+  font-size: 19px;
+  color: #4a4a4a;
+  margin: 0 0 16px;
 }
 
-.contact-col p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
+.pay-button {
+  display: inline-block;
+  background: #ffffff;
+  color: #2b2b2b;
+  border: 2px solid #b9b9b9;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 10px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.pay-button:hover,
+.pay-button:focus {
+  background: #f3f3f3;
+  border-color: #8a8a8a;
+}
+
+/* ---------- Footer contact (YouTube) ---------- */
+.contact-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 2px solid #eee2cf;
+}
+
+.contact-footer p {
+  font-size: 19px;
+  color: #4a4a4a;
+  margin: 0 0 12px;
 }
 
 .contact-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 10px;
 }
 
 .contact-item i {
-  font-size: 20px;
-  color: #039be5;
+  font-size: 26px;
 }
 
 .contact-item .bxl-youtube {
   color: #ff0000;
 }
 
-@media (max-width: 520px) {
-  .card {
-    padding: 28px 18px;
-  }
-
-  .topnav {
-    align-items: center;
-    gap: 10px;
-  }
-
-  .navlinks {
-    gap: 8px 16px;
-  }
-
-  .contact-section {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .contact-col:first-child {
-    border-right: none;
-    border-bottom: 1px solid #e8e8e8;
-    padding-bottom: 24px;
-  }
-}
-
 .contact-item a {
   text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
-  font-size: 17px;
+  color: #1c1c1c;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.contact-item a:hover {
-  color: #039be5;
+.contact-item a:hover,
+.contact-item a:focus {
+  color: #b85c00;
+}
+
+/* ===========================================================
+   Mobile adjustments
+   =========================================================== */
+@media (max-width: 560px) {
+  body {
+    font-size: 19px;
+  }
+
+  .container {
+    padding: 24px 14px 48px;
+  }
+
+  .card {
+    padding: 28px 20px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 31px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .contact-cta {
+    padding: 26px 18px;
+  }
+
+  .cta-button {
+    font-size: 23px;
+    padding: 20px 18px;
+  }
+
+  .cta-email {
+    font-size: 20px;
+  }
+
+  .profile img {
+    height: 260px;
+  }
 }

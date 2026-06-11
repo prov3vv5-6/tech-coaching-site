@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,13 +25,10 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="card" id="top">
+
+      <main class="card" id="top">
         <h1>Justin Moritz — Tech Coaching for Seniors</h1>
-        <p>
-          Hi, I’m Justin. I help people solve tech problems and to feel more
-          confident using their phones, computers, and online accounts. We work
-          step-by-step in a simple, patient, and clear way.
-        </p>
+
         <div class="profile">
           <img
             src="images/profile_github.jpg"
@@ -40,80 +37,70 @@
         </div>
 
         <p>
-          Instead of just fixing the issue and moving on, I explain what’s
-          happening so you can handle common problems on your own in the future.
+          Hi, I’m Justin. I’m a Software Engineering graduate, but I’m not here
+          to teach you to code. I’m here to help you get to the point where you
+          don’t feel like throwing your phone out the window every time you use
+          it. My goal is to help you use your phone, tablet, or computer with
+          intentionality and stewardship — as a tool that serves your life, not
+          one that adds stress to it.
         </p>
         <p>
-          We can also organize and simplify your digital life—email, photos,
-          files, apps, passwords, accounts, and calendars—so your technology
-          feels manageable instead of stressful.
+          I’ll meet you where you are, and I’ll never make you feel dumb for not
+          knowing something. Together we can turn the parts of technology that
+          feel scary, frustrating, or overwhelming into something manageable —
+          maybe even enjoyable. The goal is simple: a digital life that’s
+          organized and under control, so you can stop wrestling with your
+          devices and get back to enjoying the real life in front of you.
         </p>
 
-        <div class="HowWorks" id="how-it-works">
+        <!-- PRIMARY ACTION: Contact -->
+        <section class="contact-cta" id="contact">
+          <h2>Call or text me to get started</h2>
+          <a class="cta-button cta-phone" href="tel:+12084908621">
+            <i class="bx bx-phone"></i>
+            <span>(208) 490-8621</span>
+          </a>
+          <a class="cta-button cta-email" href="mailto:jmoritz182@gmail.com">
+            <i class="bx bx-envelope"></i>
+            <span>jmoritz182@gmail.com</span>
+          </a>
+          <p class="cta-note">
+            Call or text me anytime — I’d love to help. No question is too
+            small.
+          </p>
+        </section>
+
+        <section class="HowWorks" id="how-it-works">
           <h2>How It Works</h2>
           <ol>
             <li>
-              Click <strong>Book</strong> to choose a day and time that works
-              for you
+              Call or text me at <strong>(208) 490-8621</strong> and we’ll pick
+              a day and time that works for you
             </li>
             <li>
-              On the booking page, you’ll be asked for your
-              <strong>email</strong> and <strong>phone number</strong>, and
-              whether you’d like a one-hour <strong>remote</strong> session or a
-              one-hour <strong>in-person</strong> session
+              Let me know if you’d like a one-hour
+              <strong>remote</strong> session or a one-hour
+              <strong>in-person</strong> session
             </li>
-            <li>Use the <strong>Pay</strong> button to confirm your booking</li>
-            <li>You’ll receive a confirmation email after booking</li>
             <li>
               At your scheduled time, we solve your tech questions together,
               step-by-step
             </li>
+            <li>
+              Afterward, you can pay for your <strong>$35</strong> session
+              however is easiest for you — <strong>cash</strong>,
+              <strong>check</strong>, or the secure payment link below
+            </li>
           </ol>
           <p class="notice">
             <strong>Choosing in person?</strong> In-person sessions are for
-            friends and neighbors here in <strong>Twin Falls County</strong>, so
-            the form will simply ask for your address. <br /><br />
-            <strong>Choosing remote?</strong> No problem — just leave your phone
-            number and email, and I’ll reach out with easy, step-by-step
-            instructions to get us connected.
+            friends and neighbors here in <strong>Twin Falls County</strong>.
+            <br /><br />
+            <strong>Choosing remote?</strong> No problem — I’ll reach out with
+            easy, step-by-step instructions to get us connected.
           </p>
-        </div>
-        <p class="notice">
-          After booking, please use the Pay button below to finalize your
-          booking (pay button will open another window where you can pay for a
-          $35 session with me by entering in your credit card information).
-        </p>
+        </section>
 
-        <div class="buttons">
-          <link
-            href="https://calendar.google.com/calendar/scheduling-button-script.css"
-            rel="stylesheet"
-          />
-          <script
-            src="https://calendar.google.com/calendar/scheduling-button-script.js"
-            async
-          ></script>
-          <script>
-            (function () {
-              var target = document.currentScript;
-              window.addEventListener("load", function () {
-                calendar.schedulingButton.load({
-                  url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2TPdtyI7Cbe6uW_yUIo898HMB9ip7H2nLPyfvCudk7qTibCPAY9mVlVilmeQZnPn7nGVXzhFUd?gv=true",
-                  color: "#039BE5",
-                  label: "Book",
-                  target,
-                });
-              });
-            })();
-          </script>
-          <a
-            class="button secondary"
-            href="https://buy.stripe.com/9B6dR86Rj0Yw75H3GN43S07"
-            target="_blank"
-          >
-            Pay
-          </a>
-        </div>
         <section class="learning" id="learning">
           <h2>Free Learning Resources</h2>
           <p>
@@ -122,7 +109,7 @@
             day across phones, tablets, and websites.
           </p>
           <a
-            class="button primary"
+            class="learning-button"
             href="https://prov3vv5-6.github.io/Intentional-Tech-Learning-Website/"
             target="_blank"
             rel="noopener"
@@ -131,27 +118,29 @@
           </a>
         </section>
 
-        <div class="contact-section" id="contact">
-          <div class="contact-col">
-            <p>Questions or need help booking or paying?</p>
-            <div class="contact-item">
-              <i class="bx bx-envelope"></i>
-              <a href="mailto:jmoritz182@gmail.com" target="_blank"
-                >jmoritz182@gmail.com</a
-              >
-            </div>
-          </div>
-          <div class="contact-col">
-            <p>Watch my free step-by-step tech tutorials on YouTube.</p>
-            <div class="contact-item">
-              <i class="bx bxl-youtube"></i>
-              <a href="https://www.youtube.com/@JustinTechHelp" target="_blank"
-                >YouTube Channel</a
-              >
-            </div>
+        <!-- SECONDARY ACTION: Payment -->
+        <section class="pay-section">
+          <p class="pay-label">Already scheduled a session? Pay here.</p>
+          <a
+            class="pay-button"
+            href="https://buy.stripe.com/9B6dR86Rj0Yw75H3GN43S07"
+            target="_blank"
+            rel="noopener"
+          >
+            Pay for your $35 session
+          </a>
+        </section>
+
+        <div class="contact-footer">
+          <p>Watch my free step-by-step tech tutorials on YouTube.</p>
+          <div class="contact-item">
+            <i class="bx bxl-youtube"></i>
+            <a href="https://www.youtube.com/@JustinTechHelp" target="_blank"
+              >YouTube Channel</a
+            >
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
